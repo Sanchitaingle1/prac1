@@ -1,3 +1,63 @@
-git init
-git add
-get commit -m "added initial notes"
+
+C:\Users\PC-713\Desktop\MyNotes>git add notes.txt
+
+C:\Users\PC-713\Desktop\MyNotes>git commit -m "First commit: add notes file"
+[master (root-commit) 241d0a6] First commit: add notes file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 notes.txt
+
+C:\Users\PC-713\Desktop\MyNotes>git log --oneline
+241d0a6 (HEAD -> master) First commit: add notes file
+
+C:\Users\PC-713\Desktop\MyNotes>type notes.txt
+
+C:\Users\PC-713\Desktop\MyNotes>git show
+commit 241d0a635639bf7c7c73f44a3058a7e084606238 (HEAD -> master)
+Author: Sanchitaingle1 <aveesanch@gmail.com>
+Date:   Tue Feb 3 10:17:19 2026 +0530
+
+    First commit: add notes file
+
+diff --git a/notes.txt b/notes.txt
+new file mode 100644
+index 0000000..e69de29
+
+C:\Users\PC-713\Desktop\MyNotes>echo Learning Git basics >> notes.txt
+
+C:\Users\PC-713\Desktop\MyNotes>git log -p
+commit 241d0a635639bf7c7c73f44a3058a7e084606238 (HEAD -> master)
+Author: Sanchitaingle1 <aveesanch@gmail.com>
+Date:   Tue Feb 3 10:17:19 2026 +0530
+
+    First commit: add notes file
+
+diff --git a/notes.txt b/notes.txt
+new file mode 100644
+index 0000000..e69de29
+
+C:\Users\PC-713\Desktop\MyNotes>git commit -m "Added initial notes"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\PC-713\Desktop\MyNotes>git remote add origin https://github.com/Sanchitaingle1/MyNotes.git
+
+C:\Users\PC-713\Desktop\MyNotes>git remote -v
+origin  https://github.com/Sanchitaingle1/MyNotes.git (fetch)
+origin  https://github.com/Sanchitaingle1/MyNotes.git (push)
+
+C:\Users\PC-713\Desktop\MyNotes>git branch -M main
+
+C:\Users\PC-713\Desktop\MyNotes>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 226 bytes | 226.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sanchitaingle1/MyNotes.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
